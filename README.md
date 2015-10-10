@@ -7,6 +7,7 @@ Known supported browsers:
   - Internet Explorer v10 and v11
   - Firefox v41
   - Firefox v41 Android
+  - Stock Android browser v2.1
 
 ## Check out the <a href="http://unkelpehr.github.io/holygrail/" target="_blank">demo page</a>  for a live example.
 
