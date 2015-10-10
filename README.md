@@ -5,3 +5,6 @@ Known supported browsers:
   - Chrome v45
   - Internet Explorer v10 and v11
   - Firefox v41
+
+## Check out the [demo page](http://unkelpehr.github.io/holygrail/) for a live example.
+
