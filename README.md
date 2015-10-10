@@ -10,5 +10,5 @@ Known supported browsers:
 
 ## Check out the [demo page](http://unkelpehr.github.io/holygrail/) for a live example.
 
-Holy Grail demo page on Android
+#Holy Grail demo page on Android
 ![Holy Grail demo page on Android](http://oi62.tinypic.com/5ey07a.jpg)
