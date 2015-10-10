@@ -1,7 +1,7 @@
 # Holy Grail Layout
 Bare minimum for centered CSS Holy Grail layout with an optional max width.
 
-The demo page has been tested and works flawlessly in:
+The demo page has been tested and works flawlessly on:
   - Chrome 45
     - Windows
     - Android*
