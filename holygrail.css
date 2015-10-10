@@ -1,0 +1,52 @@
+/* Simple but powerful Holy Grail layout
+ * Licenced under MIT - ©2015 Pehr Boman <github.com/unkelpehr> */
+
+/* Keep the flex items from causing horizontal scrollbar
+ * when padded by applying border-box to all elements. */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Full body height to partially trigger the "sticky footer layout".
+ * flex-direction: column; places each element on a new line. */
+body {
+	height: 100vh;
+
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}
+
+.restrict {
+	display: flex;	/* Not crucial, but sets .restrict to 100% height */
+	margin: 0 auto; /* Center the restricted content horizontally */
+	width: 100%;	/* Needed by IE11 for centering to work properly */
+}
+
+/* Disable all flexing for left/right columns (aside) and all the immediate children of the body element.
+ * This is so their specified size will be static. */
+aside, body > * {
+	flex: 0 0 auto;
+}
+
+/* For the "sticky footer layout" (full height) to work we need to display the main element as a flexbox and allow it to grow. */
+main {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+/* The main restrictor must be a flexbox to allow left/middle/right columns. */
+main .restrict {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+}
+
+/* Let the main content both grow and shrink */
+main article {
+	flex: 1 1 auto;
+}
