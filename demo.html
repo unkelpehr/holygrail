@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CSS Holy Grail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include Holy Grail layout -->
+    <link rel="stylesheet" href="holygrail.css">
+
+    <style>
+    	/* Simple demo
+    	/---------------------*/
+		body {
+			margin: 0;
+		}
+
+		.restrict {	
+			/* Set the maximum width: of the restricted elements to 1200px */
+			max-width: 1200px;
+
+			/* Visualize the restricted portion */
+			border-left: 1px solid #000;
+			border-right: 1px solid #000;
+		}
+
+		header {
+			background: #f4a2f9;
+		}
+
+		/* Main content area */
+		main {
+			background: #f9a2a2;
+		}
+
+		/* Left column */
+		aside:first-child {
+			background: #b2f9a2;
+		}
+
+		/* Middle column (main content) */
+		article {
+			background: #f9dfa2;
+		}
+
+		/* Right column */
+		aside:last-child {
+			background: #a2acf9;
+		}
+
+		footer {
+			background: #eff9a2;
+		}
+
+		/* Width of the left and right columns */
+		aside {
+			width: 250px;
+		}
+
+		aside, article {
+			padding: 0 10px 10px 10px;
+		}
+
+		header .restrict,
+		footer .restrict {
+			padding: 0 10px;
+		}
+
+		/* Simple responsiveness */
+		@media (max-width:1000px) {
+			main .restrict {
+				flex-direction: column;
+			}
+
+			.restrict {
+				border: 0;
+			}
+
+			aside {
+				width: auto;
+			}
+		}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="restrict column">
+           <h1>Header</h1>
+        </div>
+    </header>
+
+    <div>
+    	This is a non-restricted element that spans the whole page.<br>
+    	In this demo the restricted portions have a maximum width of 1200px and have a black border to the left and right.<br><br>
+
+    	A layout change is triggered at 1000px to accommodate smaller screens.
+    </div>
+
+    <main>
+        <div class="restrict">
+        	<!-- Left column --> 
+            <aside>
+                <h1>Sidebar 1</h1>
+            </aside>
+
+        	<!-- Middle column --> 
+            <article>
+                <h1>Content</h1>
+					       
+				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+				<h2>Header Level 2</h2>
+					       
+				<ol>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ol>
+
+				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+				<h3>Header Level 3</h3>
+
+				<ul>
+				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+				   <li>Aliquam tincidunt mauris eu risus.</li>
+				</ul>
+
+				<pre><code>
+				#header h1 a { 
+					display: block; 
+					width: 300px; 
+					height: 80px; 
+				}
+				</code></pre>
+
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </article>
+
+        	<!-- Right column --> 
+            <aside>
+                <h1>Sidebar 2</h1>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="restrict">
+            <h1>Footer</h1>
+        </div>
+    </footer>
+
+</body>
+</html>
