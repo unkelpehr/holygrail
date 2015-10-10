@@ -8,7 +8,7 @@ The demo page has been tested and works flawlessly in:
     - iPad*
   - Internet Explorer 10-11
     - Windows
-    - Windows Phone 8.1**
+    - Windows Phone 8.1*
   - Firefox 41
     - Windows
     - Android*
@@ -18,7 +18,7 @@ The demo page has been tested and works flawlessly in:
     - Windows
   - Stock Android browser v2.1*
 
-\* Small screen layout
+_\* Small screen layout_
 
 ## Check out the <a href="http://unkelpehr.github.io/holygrail/" target="_blank">demo page</a>  for a live example.
 
