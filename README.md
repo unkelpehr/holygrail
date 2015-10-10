@@ -8,7 +8,7 @@ Known supported browsers:
   - Firefox v41
   - Firefox v41 Android
 
-## Check out the [demo page](http://unkelpehr.github.io/holygrail/) for a live example.
+## Check out the <a href="http://unkelpehr.github.io/holygrail/" target="_blank">demo page</a>  for a live example.
 
 ###Holy Grail demo page on Android
 ![Holy Grail demo page on Android](http://oi62.tinypic.com/5ey07a.jpg)
