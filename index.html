@@ -19,7 +19,7 @@
 
     <div>
     	<div class="restrict">
-    		It's really simple to just drop in additional elements. Maybe a nice separator between the header and the content?
+    		Adding of additional elements should just work. This is a regular div with the contents restricted.
     	</div>
     </div>
 
@@ -28,7 +28,7 @@
         	<!-- Left column --> 
             <aside>
                 <h1>Sidebar 1</h1>
-				Static width of 200px.
+				Big screen: static width of 200px.
             </aside>
 
         	<!-- Middle column --> 
@@ -52,7 +52,7 @@
 <!-- The actual style used in this page -->
 <style>
 /* Styling the style element!
- * Yep, this is the actual (and only) styling used on this page. */
+ * Yep, this is the actual (and only) style used in this page. */
 style {
 	max-height:300px;
 	overflow-y: scroll;
@@ -123,7 +123,9 @@ footer .restrict {
 /* Simple responsiveness */
 @media (max-width:1000px) {
 	main .restrict {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.restrict {
@@ -141,14 +143,14 @@ footer .restrict {
         	<!-- Right column --> 
             <aside>
                 <h1>Sidebar 2</h1>
-				Static width of 300px.
+				Big screen: static width of 300px.
             </aside>
         </div>
     </main>
 
     <div>
     	<p>
-    		And this is a non-restricted element that spans the whole page.
+    		And this is a div with non-restricted content that spans the whole page.
     	</p>
     </div>
 
