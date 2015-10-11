@@ -16,6 +16,8 @@ The demo page has been tested and works flawlessly on:
     - iPad*
   - Safari 5.3
     - Windows
+  - Opera 32
+    - Windows
   - Stock Android browser v2.1*
 
 _\* Small screen layout_
