@@ -20,7 +20,7 @@ The demo page has been tested and works flawlessly on:
     - Windows
   - Stock Android browser v2.1*
 
-_\* Small screen layout_
+_\* Only tested with small screen layout_
 
 ## Check out the <a href="http://unkelpehr.github.io/holygrail/" target="_blank">demo page</a>  for a live example.
 
