@@ -13,9 +13,9 @@ The demo page has been tested and works flawlessly on:
     - Windows
     - Android*
   - Safari iOS
-    - iPad*
+    - iPad* _(+ reader mode)_
   - Safari 5.3
-    - Windows
+    - Windows _(+ reader mode)_
   - Opera 32
     - Windows
   - Stock Android browser v2.1*
@@ -24,5 +24,5 @@ _\* Only tested with small screen layout_
 
 ## Check out the <a href="http://unkelpehr.github.io/holygrail/" target="_blank">demo page</a>  for a live example.
 
-###Holy Grail demo page on Android
-![Holy Grail demo page on Android](http://oi62.tinypic.com/5ey07a.jpg)
+###Holy Grail demo page on phone
+![Holy Grail demo page on phone](http://oi60.tinypic.com/dwdocw.jpg)
